@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;/* Tipo de letra general del texto */
+    margin: 0;
+    /* Si se trabaja en mitad de pantalla mejor al 5%*/
+    background-color: #fff; /* Color de fondo para toda la pagina */
+}
+
+header {
+    color: rgb(0, 0, 25);  /* Color general del texto  */
+    text-align: center;     /* Texto centrado */
+    padding: 20px; /* espacio respecto al inicio de pagina y el siguiente bloque  */
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Tipo de letra del titulo  */
+    font-size: 2.5em; /* Tamaño del texto */
+    color: red; /* Color del texto  */
+    margin-bottom: 10px; /* Margen inferior respecto al menu de navegación  */
+}
+
+header h1:hover {/* Color del texto al situarnos sobre él */
+    color: rgba(240, 93, 80, 0.5);
+}
+
+header p{ /* Aspecto para los parrafos del header*/
+    margin: 5px; /* margen de cada parrafo entre ellos*/
+    font-size: 1.1em; /* Tamaño de letra  */
+    color: rgb(0, 0, 25); /* Color del texto  */
+}
+
+header p:hover{/* Color del texto al situarnos sobre él */
+    color: rgba(0, 0, 25, 0.5);
+}
+
+main {
+    padding: 20px; /* Separación respecto a los otros bloques */
+    text-align: center; /* Texto centrado */
+    padding-inline: 17%; /* Ajusta el ancho de la página, asemejar más a la imagen ejemplo  */
+}
+
+main h1 { /* Tamaño y color del texto */
+    font-size: 1.8em;
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+}
+
+.texto { 
+    font-family: Arial, Helvetica, sans-serif; /* Especificamos el tipo de letra */
+    font-size: 1em; /* Tamaño de letra  */
+    line-height: 1.6; /* Espaciado entre las lineas */
+    max-width: 600px; /* Ancho máximo del elemento*/
+    margin: 0 auto; 
+}
+
+.author {
+    font-size: 1.2em; /* Tamaño de letra  */
+    font-weight:300; /* Tipo de grososr  */
+    margin-top: 20px; /*margen con el elemento superior*/
+}
+
+.date {
+    color: #555; /* Color del texto  */
+    margin-top: 5px; /*margen con el elemento superior*/
+    font-size: 0.6em; /* Tamaño de letra  */
+}
+
+figcaption{
+    margin-top: 15px;
+    font-size:xx-small; /* Tamaño de letra  */
+}
+
+a {
+    color: rgb(240, 93, 80); /* Color del texto  */
+    text-decoration: none; /*Sin texto subrayado*/
+}
+
+a:hover { /* Color del texto al situarnos sobre él */
+    color: rgba(240, 93, 80, 0.5);
+}
+
+.POV{
+    text-align:left; /* Texto situado a la izquierda */
+    line-height: 1.5; /* Espaciado entre las lineas */
+    font-weight: bold; /*Texto en negrita*/
+}
+
+/*Aspecto general para el bloque article*/
+article{
+    text-align: left;/* Texto situado a la izquierda */
+}
+
+article p{
+    font-family: Arial, Helvetica, sans-serif; /* Tipo de letra general del texto */
+    font-size: 0.73em; /* Tamaño de letra  */
+    line-height: 1.5; /* Espaciado entre las lineas */
+}
+
+cite{
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Tipo de letra gpara las citas */
+}
+
+.video-container { /*aspecto del contenedor div para el video y parrafo*/
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    max-width: 800px; /* Máximo ancho del video */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    display: flex;
+    flex-direction: column; /* Asegura que el texto esté debajo del video */
+    align-items: center; /* Centra el contenido horizontalmente */
+  }
+  
+  .video-container iframe {/*dimensiones del video*/
+    width: 450px;
+    height: 250px;
+  }
+  
+  .video-caption {
+    margin-top: 10px; /* Espacio entre el video y el texto */
+    font-size: 10px; /* Tamaño de la fuente del pie de texto */
+    text-align: center; /* Centra el texto */
+    font-style: italic; /*texto en cursiva*/
+  }
+
+  .discurso{
+    padding-inline: 4.8%;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:400;
+  }
+  
+  .discurso .disc{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 0.58em;
+
+  }
+
+  .Firma{
+    padding-top: 20px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+
+  footer{
+    background-color: rgb(0, 0, 25);
+    text-align: center;
+    font-size: medium;
+    color:rgb(255, 255, 255);
+    padding: 30px;
+    margin-top: 20px;
+  }
+
+
+  /* estilos especificos para segunda pagina */
+.orden{
+    font-size: x-small;
+}
+
+.lista{
+    padding-left:30%;
+    margin-top: 50px;
+    text-align: left;
+    color: rgba(0, 0, 25, 0.5);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.category{
+    list-style: none;
+    list-style-image: url("viñeta.png");
+}
+
+li{
+    line-height: 1.5;
+    list-style:square;
+}
+
+li a{
+    font-weight: 100;
+    font-size:0.8em;
+}
+
+.consulta{
+    text-align: center;
+    margin-top:30px;
+    font-size: small;
+}
+
+footer a{
+    color:rgb(255, 255, 255);
+    font-size: small;
+}
+
+footer a:hover{
+    color:rgba(255, 255, 255, 0.25);
+}
+
+.premiados{
+    margin-top: 50px;
+}
+.premiados a{
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.premiados p{
+    padding-left: 25px;
+    font-size: 1em;
+}
+
+time{
+    color: rgba(0, 0, 25, 0.5);
+    font-weight: bold;
+    font-size:larger;
+}
